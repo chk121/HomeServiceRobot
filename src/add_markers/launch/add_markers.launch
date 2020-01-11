@@ -1,0 +1,14 @@
+<launch>
+    <!-- PICK-UP ZONE -->
+    <param name="/plemma/hsr/pickup_pose_x"       value="-2.5" />
+    <param name="/plemma/hsr/pickup_pose_y"       value="3.2" />
+    <param name="/plemma/hsr/pickup_pose_yaw_deg" value="45" />
+    <!-- DROP-OFF ZONE -->
+    <param name="/plemma/hsr/dropoff_pose_x"       value="-3.5" />
+    <param name="/plemma/hsr/dropoff_pose_y"       value="-0.5" />
+    <param name="/plemma/hsr/dropoff_pose_yaw_deg" value="30" />
+    <!-- MODE: display the markers independently of robot's position -->
+    <param name="/plemma/hsr/add_markers/track_robot" value="false" />
+    <node pkg="add_markers"       type="add_markers"
+          name="add_markers" output="screen" />
+</launch>

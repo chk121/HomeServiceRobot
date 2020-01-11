@@ -1,0 +1,12 @@
+<launch>
+    <!-- PICK-UP ZONE -->
+    <param name="/plemma/hsr/pickup_pose_x"       value="-2.5" />
+    <param name="/plemma/hsr/pickup_pose_y"       value="3.2" />
+    <param name="/plemma/hsr/pickup_pose_yaw_deg" value="45" />
+    <!-- DROP-OFF ZONE -->
+    <param name="/plemma/hsr/dropoff_pose_x"       value="-3.5" />
+    <param name="/plemma/hsr/dropoff_pose_y"       value="-0.5" />
+    <param name="/plemma/hsr/dropoff_pose_yaw_deg" value="30" />
+    <node pkg="pick_objects"       type="pick_objects"
+          name="pick_objects" output="screen" />
+</launch>
